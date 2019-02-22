@@ -1,0 +1,369 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6228BC90221BD5A70091B277 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6228BC8F221BD5A70091B277 /* AppDelegate.swift */; };
+		6228BC92221BD5A70091B277 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6228BC91221BD5A70091B277 /* ViewController.swift */; };
+		6228BC95221BD5A70091B277 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6228BC93221BD5A70091B277 /* Main.storyboard */; };
+		6228BC97221BD5A80091B277 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6228BC96221BD5A80091B277 /* Assets.xcassets */; };
+		6228BC9A221BD5A80091B277 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6228BC98221BD5A80091B277 /* LaunchScreen.storyboard */; };
+		6228BCA3221BD6070091B277 /* EasyJSBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6228BCA2221BD6070091B277 /* EasyJSBridge.swift */; };
+		6228BCA8221BF1510091B277 /* easy-bridge.js.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6228BCA7221BF1510091B277 /* easy-bridge.js.txt */; };
+		6228BCAA221BF1700091B277 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 6228BCA9221BF1700091B277 /* index.html */; };
+		625FEC02221F9D8B00752F07 /* EasyJSBridge.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 625FEC01221F9D8B00752F07 /* EasyJSBridge.podspec */; };
+		625FEC08221FCD4100752F07 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 625FEC07221FCD4100752F07 /* README.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6228BC8C221BD5A70091B277 /* EasyJSBridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyJSBridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6228BC8F221BD5A70091B277 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6228BC91221BD5A70091B277 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6228BC94221BD5A70091B277 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6228BC96221BD5A80091B277 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6228BC99221BD5A80091B277 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6228BC9B221BD5A80091B277 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6228BCA2221BD6070091B277 /* EasyJSBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyJSBridge.swift; sourceTree = "<group>"; };
+		6228BCA7221BF1510091B277 /* easy-bridge.js.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "easy-bridge.js.txt"; sourceTree = "<group>"; };
+		6228BCA9221BF1700091B277 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		625FEC01221F9D8B00752F07 /* EasyJSBridge.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EasyJSBridge.podspec; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		625FEC07221FCD4100752F07 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6228BC89221BD5A70091B277 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6228BC83221BD5A70091B277 = {
+			isa = PBXGroup;
+			children = (
+				6228BC8E221BD5A70091B277 /* EasyJSBridge */,
+				6228BC8D221BD5A70091B277 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6228BC8D221BD5A70091B277 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6228BC8C221BD5A70091B277 /* EasyJSBridge.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6228BC8E221BD5A70091B277 /* EasyJSBridge */ = {
+			isa = PBXGroup;
+			children = (
+				625FEC07221FCD4100752F07 /* README.md */,
+				625FEC01221F9D8B00752F07 /* EasyJSBridge.podspec */,
+				6228BCA1221BD5EF0091B277 /* Source */,
+				6228BC8F221BD5A70091B277 /* AppDelegate.swift */,
+				6228BC91221BD5A70091B277 /* ViewController.swift */,
+				6228BC93221BD5A70091B277 /* Main.storyboard */,
+				6228BC96221BD5A80091B277 /* Assets.xcassets */,
+				6228BC98221BD5A80091B277 /* LaunchScreen.storyboard */,
+				6228BC9B221BD5A80091B277 /* Info.plist */,
+				6228BCA9221BF1700091B277 /* index.html */,
+			);
+			path = EasyJSBridge;
+			sourceTree = "<group>";
+		};
+		6228BCA1221BD5EF0091B277 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				6228BCA7221BF1510091B277 /* easy-bridge.js.txt */,
+				6228BCA2221BD6070091B277 /* EasyJSBridge.swift */,
+			);
+			path = Source;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6228BC8B221BD5A70091B277 /* EasyJSBridge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6228BC9E221BD5A80091B277 /* Build configuration list for PBXNativeTarget "EasyJSBridge" */;
+			buildPhases = (
+				6228BC88221BD5A70091B277 /* Sources */,
+				6228BC89221BD5A70091B277 /* Frameworks */,
+				6228BC8A221BD5A70091B277 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EasyJSBridge;
+			productName = EasyJSBridge;
+			productReference = 6228BC8C221BD5A70091B277 /* EasyJSBridge.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6228BC84221BD5A70091B277 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = howard;
+				TargetAttributes = {
+					6228BC8B221BD5A70091B277 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 6228BC87221BD5A70091B277 /* Build configuration list for PBXProject "EasyJSBridge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6228BC83221BD5A70091B277;
+			productRefGroup = 6228BC8D221BD5A70091B277 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6228BC8B221BD5A70091B277 /* EasyJSBridge */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6228BC8A221BD5A70091B277 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6228BCAA221BF1700091B277 /* index.html in Resources */,
+				6228BCA8221BF1510091B277 /* easy-bridge.js.txt in Resources */,
+				6228BC9A221BD5A80091B277 /* LaunchScreen.storyboard in Resources */,
+				625FEC08221FCD4100752F07 /* README.md in Resources */,
+				6228BC97221BD5A80091B277 /* Assets.xcassets in Resources */,
+				625FEC02221F9D8B00752F07 /* EasyJSBridge.podspec in Resources */,
+				6228BC95221BD5A70091B277 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6228BC88221BD5A70091B277 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6228BCA3221BD6070091B277 /* EasyJSBridge.swift in Sources */,
+				6228BC92221BD5A70091B277 /* ViewController.swift in Sources */,
+				6228BC90221BD5A70091B277 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6228BC93221BD5A70091B277 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6228BC94221BD5A70091B277 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6228BC98221BD5A80091B277 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6228BC99221BD5A80091B277 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6228BC9C221BD5A80091B277 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6228BC9D221BD5A80091B277 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6228BC9F221BD5A80091B277 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EasyJSBridge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.howard.EasyJSBridge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6228BCA0221BD5A80091B277 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EasyJSBridge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.howard.EasyJSBridge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6228BC87221BD5A70091B277 /* Build configuration list for PBXProject "EasyJSBridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6228BC9C221BD5A80091B277 /* Debug */,
+				6228BC9D221BD5A80091B277 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6228BC9E221BD5A80091B277 /* Build configuration list for PBXNativeTarget "EasyJSBridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6228BC9F221BD5A80091B277 /* Debug */,
+				6228BCA0221BD5A80091B277 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6228BC84221BD5A70091B277 /* Project object */;
+}

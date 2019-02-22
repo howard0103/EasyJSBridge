@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <script type='text/javascript'>
+    
+    //在Window对象上注入JSBridge，注入成功后会进入回调方法
+    function setupWebViewJavascriptBridge(callback) {
+        if(window.EasyJSBridge) {
+            return callback(EasyJSBridge);
+        }
+        if(window.WVJBCallbacks) {
+            return window.WVJBCallbacks.push(callback);
+        }
+        window.WVJBCallbacks = [callback];
+        var WVJBIframe = document.createElement('iframe');
+        WVJBIframe.style.display = 'none';
+        WVJBIframe.src = 'easy-jsbridge://__BRIDGE_LOADED__';
+        document.documentElement.appendChild(WVJBIframe);
+        setTimeout(function() {
+                   document.documentElement.removeChild(WVJBIframe)
+                   }, 0)
+    }
+    
+    //调用注入方法
+    setupWebViewJavascriptBridge(function(bridge) {
+                                 //页面加载完毕后直接调App方法
+                                 h5Test3()
+                                 bridge.registerHandler('test1', function(data) {
+                                                        alert('Hello H5');
+                                                        })
+                                 bridge.registerHandler('test2', function(data, responseCallback) {
+                                                        alert('收到App数据:'+data);
+                                                        })
+                                 //注册一个方法供App调用
+                                 //handlerName:方法名
+                                 //handler:- data:App传递过来的数据 responseCallback:把处理好的数据返回给App
+                                 bridge.registerHandler('test3', function(data, responseCallback) {
+                                                        alert('收到App数据:'+data);
+                                                        responseCallback("123");
+                                                        })
+                                 })
+
+    var h5Test1 = function(event){
+        var bridge = window.EasyJSBridge;
+        //调用App注册好的一个名为test4的方法
+         bridge.callHandler('test4')
+    }
+    
+    var h5Test2 = function(event){
+        var bridge = window.EasyJSBridge;
+        //调用App注册好的一个名为test5的方法，带参数
+        bridge.callHandler('test5', "123")
+    }
+    
+    var h5Test3 = function(event){
+        var bridge = window.EasyJSBridge;
+        //调用App注册好的一个名为test6的方法，带参数，带App响应回调
+        bridge.callHandler('test6', "123", function(data) {
+                           alert('收到App的响应数据:'+data)
+                           })
+    }
+
+    </script>
+</head>
+
+<body style="text-align:center">
+    <title>H5测试界面</title>
+    <div style="margin-top:260px">
+    This is a HTML page!  交互测试！！！
+    <div/>
+    <div style="margin-top: 10px auto,text-align:center">
+    <button onclick="h5Test1()" style="width:200px;height:40px;margin-top: 10px">  调iOS方法(无参)  </button>
+    <button onclick="h5Test2()" style="width:200px;height:40px;margin-top: 10px">  调iOS方法(带参)  </button>
+    <button onclick="h5Test3()" style="width:200px;height:40px;margin-top: 10px">  调iOS方法(带参带iOS响应)  </button>
+    </div>
+</body>
+</html>
